@@ -35,8 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = cart.reduce((a, c) => a + c.price, 0)
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,8 +55,12 @@ const cart = [
 
 //CODE HERE
 
-
-
+function calcFinalPrice(cartTotal, couponValue, tax){
+    cartTotal = cartTotal * (1 + tax)
+    cartTotal = cartTotal - couponValue
+    return cartTotal
+}
+// console.log(calcFinalPrice(100, 20, .06))
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -79,6 +83,11 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+    The properies that my customer object will have a name as a string because I am just storing the name of the person but I can also pretty easily edit and change a string if needed,
+     the order of the person as an array so that way I can store multiple strings into the order, 
+     the total (before tax) of the order as a math value so if needed I can use that value for any kind of mathematical operation,
+     and satisfaction score saved as a math value again so I can do easy mathematical operations or other operations for ex. comparing their score to see whether they were really satisfied or not
+    
 
 */
 
@@ -88,3 +97,5 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {customerName:'John Smith', customerOrder:['Diet Coke', 'Steak', 'Fries', 'Ice cream'], customerTotal:16, customerSatisfaction: 8}
+console.log(customer)

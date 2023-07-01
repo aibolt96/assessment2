@@ -60,8 +60,8 @@ function canWeDeliver(zipCode){
     }
 }
 
-console.log(canWeDeliver(85205))
-console.log(canWeDeliver(85209))
+// console.log(canWeDeliver(85205))
+// console.log(canWeDeliver(85209))
 /* 
     Problem 2 Continued
 
@@ -123,7 +123,7 @@ const deals = [
 
 //CODE HERE
 deals[0].title = deals[0].title.replace('15', '10');
-console.log(deals[0].title)
+// console.log(deals[0].title)
 
 /*
     The restaurant is going to continue its
@@ -140,4 +140,4 @@ console.log(deals[0].title)
 
 //CODE HERE
 deals[1].desc = deals[1].desc.replace('March', 'April').trim()
-console.log(deals[1].desc)
+// console.log(deals[1].desc)
